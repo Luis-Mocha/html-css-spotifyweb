@@ -44,10 +44,10 @@ width: 23%;
 
 /* Parte inferiore sidenav */
 #sidenav .download-icon {
-    width: 20px;
+    width: 12%;
 }
 #sidenav .profile-icon {
-    width: 35px;
+    width: 20%;
     background-color: gray;
     clip-path: circle();
 }
@@ -80,7 +80,7 @@ width: 23%;
 
 /* BREAKPOINTS */
 /* Telefono mobile piccolo Max-width: 375px */
-@media  screen and (max-width:375px) {
+@media  screen and (max-width:425px) {
     #sidenav {
         align-items: center;
         padding: 0.5rem;
@@ -99,6 +99,13 @@ width: 23%;
         margin: auto;
         margin-bottom: 0.5rem;
         }
+    #sidenav .profile-icon {
+        width: 35px;
+        margin: auto;
+    }
+    #sidenav .download-icon {
+        width: 20px;
+    }
 }
 
 

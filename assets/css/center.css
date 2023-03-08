@@ -1,0 +1,30 @@
+/* -- CENTER -- */
+
+/* UPGRADE BANNER */
+#upgrade-banner {
+    background-color: rgba(0, 0, 0, 0.26);
+    padding: 1.5rem;
+    text-align: end;
+    position: sticky;
+    top: 0;
+}
+.btn-upgrade {
+    color: white;
+    border: 1px solid white;
+    border-radius: 30px;
+    padding: 0.5rem 1rem;
+}
+
+/* NAV */
+#central nav {
+    padding: 1rem 0;
+}
+#central ul {
+    justify-content: center;
+}
+#central nav li {
+    color: gray;
+    text-transform: uppercase;
+    margin: 0 1rem;
+}
+

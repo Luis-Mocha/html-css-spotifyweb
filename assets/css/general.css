@@ -55,6 +55,7 @@ html {
 /* Contenitori Principali */
 #player {
     height: 100px;
+    background-color: rgb(40,40,40);
 }
 
 main {
@@ -73,6 +74,9 @@ main {
     height: 100%;
     width: calc(100% - 200px);
     overflow: auto;
+
+    /* al fine di mettere il banner upgrade fisso: */
+    position: relative;
 }
 /* PROPRIETA' GENERALI TESTI */
 h3 , h2 {
@@ -82,18 +86,24 @@ h3 , h2 {
 /* MEDIA QUERY */
 /* Tablet Max-width:768px*/
 @media  screen and (max-width:768px) {
+    
     #central {
-        background-color: bisque;
     }
 }
-/* Dispositivo mobile grande Max-width:425px */
+/* Dispositivo mobile grande Max-width:500px */
+@media  screen and (max-width:500px) {
+    html {
+        font-size: 13px;
+    }
+    #sidenav {
+        width: 180px;
+    }
+    #central {
+        width: calc(100% - 180px);
+    }
+}
+/* Telefono mobile piccolo Max-width: 375px */ /*!L'ho reso 425px*/
 @media  screen and (max-width:425px) {
-    #central {
-        background-color: bisque;
-    }
-}
-/* Telefono mobile piccolo Max-width: 375px */ /*!Forse lo rend0 375px*/
-@media  screen and (max-width:375px) {
     #sidenav {
         width: 60px;
     }
