@@ -1,0 +1,16 @@
+/* General Info */
+/* 
+Google Font:
+font-family: 'Palanquin Dark', sans-serif;
+
+Colors:
+- main background: rgb(20,25,34);
+- player background: rgb(40,40,40);
+- gray text (aside): rgb(112,112,112)
+*/
+
+/* CSS RESET */
+ * { box-sizing: border-box; margin: 0; padding: 0;}
+img { width: 100%; display: block;}
+li {list-style: none;}
+a {text-decoration: none; color: inherit;}
