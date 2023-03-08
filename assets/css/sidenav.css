@@ -100,3 +100,24 @@ width: 23%;
         margin-bottom: 0.5rem;
         }
 }
+
+
+/* Scrollbar personalizzata */
+/* width */
+#sidenav::-webkit-scrollbar {
+    width: 4px;
+  }
+  /* Track */
+  #sidenav::-webkit-scrollbar-track {
+    box-shadow: inset 0 0 5px grey; 
+    border-radius: 10px;
+  }
+  /* Handle */
+  #sidenav::-webkit-scrollbar-thumb {
+    background: rgb(13, 143, 59); 
+    border-radius: 50%;
+  }
+  /* Handle on hover */
+  #sidenav::-webkit-scrollbar-thumb:hover {
+    background: rgb(30,215,96); 
+  }
