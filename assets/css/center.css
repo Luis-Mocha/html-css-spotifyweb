@@ -1,12 +1,13 @@
-/* -- CENTER -- */
+/* -- CENTRAL -- */
 
 /* UPGRADE BANNER */
 #upgrade-banner {
-    background-color: rgba(0, 0, 0, 0.26);
+    background-color: rgba(0, 0, 0, 0.4);
     padding: 1.5rem;
     text-align: end;
     position: sticky;
     top: 0;
+    z-index: 99;
 }
 .btn-upgrade {
     color: white;
@@ -26,5 +27,63 @@
     color: gray;
     text-transform: uppercase;
     margin: 0 1rem;
+    cursor: pointer;
 }
 
+/* SECTIONS */
+section {
+    padding: 1.5rem
+}
+.card-container {
+    margin: 1rem 0;
+}
+
+.card {
+    width: calc(100% / 6 - 1rem);
+}
+.card-img {
+    position: relative;
+}
+.card-info {
+    text-align: center;
+    padding: 0.5rem 0;
+}
+.card-info h3 {
+    line-height: 1;
+}
+section span {
+    color: gray;
+}
+/* Effetto Hover: Play */
+.play-hover {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.fa-circle-play {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3rem;
+    color:white;
+}
+.card:hover .play-hover{
+    display: block;
+}
+
+/* Sezione RECENT */
+#recent .card-container {
+    justify-content: space-between;
+}
+/* Sezione FOR-YOU e ARTISTI */
+#for-you .card-container,
+#artists .card-container {
+    gap: 1rem;
+}
+
+#artists .card-img {
+    clip-path: circle();
+}
