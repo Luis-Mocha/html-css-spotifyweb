@@ -46,10 +46,12 @@ section {
 }
 .card-info {
     text-align: center;
-    padding: 0.5rem 0;
+    padding: 0.5rem 0;    
 }
 .card-info h3 {
     line-height: 1;
+    max-height: 80px;
+    overflow: hidden; 
 }
 section span {
     color: gray;
