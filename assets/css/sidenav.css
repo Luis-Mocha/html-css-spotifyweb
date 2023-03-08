@@ -1,0 +1,60 @@
+/* -- SIDENAV -- */
+#sidenav {
+    color: rgb(128, 128, 128);
+    justify-content: space-between;
+    padding: 1rem 1rem 2rem 0;
+}
+
+#sidenav a {
+    align-items: center;
+}
+
+#logo-spotify,
+.upper-side nav a,
+.playlist-list,
+.bottom-side {
+    margin-left: 1rem
+}
+
+/* Parte superiore sidenav */
+#sidenav .upper-side {
+    width: 85%;
+}
+
+#sidenav nav img {
+width: 23%;
+}
+
+.fa-square-plus {
+    font-size: 40px;
+    vertical-align: middle;
+}
+
+/* Parte inferiore sidenav */
+#sidenav .download-icon {
+    width: 12%;
+}
+#sidenav .profile-icon {
+    width: 20%;
+    background-color: gray;
+    clip-path: circle();
+}
+#sidenav .profile-icon img {
+    position: relative;
+    top: 5px;
+}
+
+
+/* Effetto Hover: svg e testo si colorano di bianco */
+#sidenav a:hover,
+#sidenav a:hover img {
+    filter: none;
+    color: white;
+}
+/* Effetto Hover: bordo sinistro dii nav */
+.upper-side nav li {
+    border-left: 2px solid transparent
+}
+.upper-side nav li:hover {
+    border-left: 2px solid greenyellow
+}
