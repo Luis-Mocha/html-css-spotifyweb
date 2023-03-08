@@ -2,29 +2,41 @@
 #sidenav {
     color: rgb(128, 128, 128);
     justify-content: space-between;
-    padding: 1rem 1rem 2rem 0;
+    padding: 1rem 1rem 1rem 0;
 }
 
 #sidenav a {
     align-items: center;
+    gap: 7px;
 }
 
+/* Margini e distanze tra elementi */
 #logo-spotify,
 .upper-side nav a,
 .playlist-list,
 .bottom-side {
     margin-left: 1rem
 }
+#logo-spotify,
+#sidenav nav,
+.playlist-list {
+    margin-bottom: 1rem;
+}
+
+#sidenav nav a {
+    line-height: 2.5;
+}
+.playlist-list {
+    line-height: 2;
+}
 
 /* Parte superiore sidenav */
 #sidenav .upper-side {
-    width: 85%;
+    width: 90%;
 }
-
 #sidenav nav img {
 width: 23%;
 }
-
 .fa-square-plus {
     font-size: 40px;
     vertical-align: middle;
@@ -43,7 +55,9 @@ width: 23%;
     position: relative;
     top: 5px;
 }
-
+.bottom-side hr {
+    margin: 0.3rem 0;
+}
 
 /* Effetto Hover: svg e testo si colorano di bianco */
 #sidenav a:hover,
