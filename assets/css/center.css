@@ -29,7 +29,19 @@
     margin: 0 1rem;
     cursor: pointer;
 }
+.div-bottom-link {
+    border: 1px solid transparent;
+    width: 40%;
+    margin: auto;
+}
 
+/* Effetto Hover: colore e underline li */
+#central nav li:hover {
+    color: white;
+}
+#central nav li:hover .div-bottom-link {
+    border-color: greenyellow;
+}
 /* SECTIONS */
 section {
     padding: 1.5rem
@@ -115,7 +127,7 @@ section span {
 /* Scrollbar personalizzata */
  /* width */
 ::-webkit-scrollbar {
-    width: 10px;
+    width: 8px;
   }
   
   /* Track */
