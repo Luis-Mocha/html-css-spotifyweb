@@ -1,0 +1,19 @@
+/* -- SIDENAV -- */
+#sidenav {
+    color: rgb(128, 128, 128);
+}
+#sidenav .upper-side {
+    width: 70%;
+}
+
+#sidenav img:not(#logo-spotify) {
+width: 25%;
+}
+
+/* Effetto Hover: svg e testo si colorano di bianco */
+#sidenav li:hover img,
+#sidenav li:hover a,
+#sidenav a:hover {
+    filter: none;
+    color: white;
+}

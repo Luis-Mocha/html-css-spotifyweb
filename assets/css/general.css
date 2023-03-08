@@ -15,6 +15,10 @@ img { width: 100%; display: block;}
 li {list-style: none;}
 a {text-decoration: none; color: inherit;}
 
+html {
+    font-family: 'Palanquin Dark', sans-serif;
+}
+
 /* UTILITY */
 .control-red {
     background-color: pink;
@@ -26,10 +30,23 @@ a {text-decoration: none; color: inherit;}
     background-color: rgb(231, 231, 102);
 }
 
+.svg-filter-gray {
+    filter: invert(52%) sepia(0%) saturate(2%) hue-rotate(135deg) brightness(96%) contrast(88%);
+}
+
+.flex {
+    display: flex;
+}
 .flex-wrap {
     display: flex;
     flex-wrap: wrap;
 }
+
+.flex-column {
+    display: flex;
+    flex-direction: column;
+}
+
 /* -- CONTENITORI -- */
 /* Contenitore Web App */
 .web-app {
@@ -42,20 +59,24 @@ a {text-decoration: none; color: inherit;}
 
 main {
     height: calc(100% - 100px);
-    /* display: flex; */
 }
 
-#side-nav {
+#sidenav {
     width: 200px;
     height: 100%;
     overflow: auto;
+    background-color: black;
 }
 
 #central {
-    background-color: azure;
+    background-color: rgb(20,25,34);
     height: 100%;
     width: calc(100% - 200px);
     overflow: auto;
+}
+/* PROPRIETA' GENERALI TESTI */
+h3 , h2 {
+    color: white;
 }
 
 /* MEDIA QUERY */
@@ -73,7 +94,7 @@ main {
 }
 /* Telefono mobile piccolo Max-width: 320px */ /*!Forse lo rend0 375px*/
 @media  screen and (max-width:320px) {
-    #side-nav {
+    #sidenav {
         width: 60px;
     }
     #central {
