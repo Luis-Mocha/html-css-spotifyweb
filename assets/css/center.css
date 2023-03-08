@@ -2,7 +2,7 @@
 
 /* UPGRADE BANNER */
 #upgrade-banner {
-    background-color: rgba(0, 0, 0, 0.4);
+    background-color: rgba(0, 0, 0, 0.7);
     padding: 1.5rem;
     text-align: end;
     position: sticky;
@@ -87,3 +87,25 @@ section span {
 #artists .card-img {
     clip-path: circle();
 }
+
+/* MEDIA QUERY */
+/* Tablet Max-width:768px*/
+@media  screen and (max-width:868px) {
+    .card {
+        width: calc(100% / 4 - 1rem);
+    }
+    #recent .card-container {
+        justify-content: start;
+        gap: 1rem;
+    }
+ }
+ /* Dispositivo mobile grande Max-width:500px */
+ @media  screen and (max-width:600px) {
+    .card {
+        width: calc(100% / 2 - 1rem);
+    }
+ }
+ /* Telefono mobile piccolo Max-width: 425px */ /*!L'ho reso 425px*/
+ @media  screen and (max-width:425px) {
+    
+ }

@@ -88,11 +88,11 @@ h2 {
 
 /* MEDIA QUERY */
 /* Tablet Max-width:768px*/
-@media  screen and (max-width:768px) {
+@media  screen and (max-width:868px) {
    /* / */
 }
 /* Dispositivo mobile grande Max-width:500px */
-@media  screen and (max-width:500px) {
+@media  screen and (max-width:600px) {
     html {
         font-size: 13px;
     }
@@ -103,7 +103,7 @@ h2 {
         width: calc(100% - 180px);
     }
 }
-/* Telefono mobile piccolo Max-width: 375px */ /*!L'ho reso 425px*/
+/* Telefono mobile piccolo Max-width: 425px */ /*!L'ho reso 425px*/
 @media  screen and (max-width:425px) {
     #sidenav {
         width: 60px;
