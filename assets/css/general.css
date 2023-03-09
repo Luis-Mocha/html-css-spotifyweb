@@ -17,6 +17,7 @@ a {text-decoration: none; color: inherit;}
 
 html {
     font-family: 'Palanquin Dark', sans-serif;
+    min-width: 300px;
 }
 
 /* UTILITY */

@@ -84,3 +84,49 @@
     width: 12px;
     height: 12px;
   }
+
+  /* MEDIA QUERY */
+/* Tablet Max-width:768px*/
+@media  screen and (max-width:868px) {
+    .only-desktop {
+        display: none;
+    }
+ }
+ /* Dispositivo mobile grande Max-width:500px */
+ @media  screen and (max-width:600px) {
+    .only-tablet-up {
+        display: none;
+    }
+    #player h4 {
+        animation-name: flashing;
+        animation-duration: 2s;
+        animation-iteration-count: infinite;
+    }
+ }
+ /* Telefono mobile piccolo Max-width: 425px */ /*!L'ho reso 425px*/
+ @media  screen and (max-width:425px) {
+   
+    .left {
+        gap:0.2rem
+    }
+    .icons > *:not(.slider){
+        margin: 0 0.2rem;
+    }
+ }
+
+
+/* Animazioni */
+ @keyframes flashing {
+    0% {
+        scale: 1;
+        color: rgb(90, 89, 89);
+    }
+    50% {
+        scale: 1.1;
+        color: white;
+    }
+    100% {
+        scale: 1;
+        color: rgb(90, 89, 89);
+    }
+ }
