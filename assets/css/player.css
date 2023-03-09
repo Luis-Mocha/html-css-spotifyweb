@@ -109,6 +109,9 @@
     .left {
         gap:0.2rem
     }
+    .left .playing-now {
+        max-width: 60%;
+    }
     .icons > *:not(.slider){
         margin: 0 0.2rem;
     }
