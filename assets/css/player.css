@@ -11,6 +11,10 @@
  font-size: 1.5rem;
  cursor: pointer;
 }
+#player .fa-solid:hover,
+#player .fa-regular:hover {
+    color: rgb(30,190,70);
+}
 
 /* Parte Sinistra */
 .left{
@@ -91,6 +95,9 @@
     .only-desktop {
         display: none;
     }
+    .left {
+        gap:0.2rem
+    }
  }
  /* Dispositivo mobile grande Max-width:500px */
  @media  screen and (max-width:600px) {
@@ -105,15 +112,11 @@
  }
  /* Telefono mobile piccolo Max-width: 425px */ /*!L'ho reso 425px*/
  @media  screen and (max-width:425px) {
-   
-    .left {
-        gap:0.2rem
-    }
     .left .playing-now {
         max-width: 60%;
     }
-    .icons > *:not(.slider){
-        margin: 0 0.2rem;
+    .only-xs-up {
+        display: none;
     }
  }
 
