@@ -54,12 +54,12 @@ html {
 }
 /* Contenitori Principali */
 #player {
-    height: 100px;
+    height: 90px;
     background-color: rgb(40,40,40);
 }
 
 main {
-    height: calc(100% - 100px);
+    height: calc(100% - 90px);
 }
 
 #sidenav {

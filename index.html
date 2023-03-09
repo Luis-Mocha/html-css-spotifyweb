@@ -373,20 +373,44 @@
         </main>
         <!-- PLAYER -->
         <div id="player" class="flex">
-            <div class="left">
+            <!-- parte sinistra -->
+            <div class="left flex">
+                <div class="playing-now flex">
+                    <img src="./assets/img/sinister.jpeg" alt="Riprozuine cover">
+                    <div>
+                        <h4>
+                            Sinister
+                        </h4>
+                        <span>
+                            Nome Brano
+                        </span>
+                    </div>
+                </div>
                 <i class="fa-regular fa-folder"></i>
                 <i class="fa-regular fa-heart"></i>
             </div>
+            <!-- parte centrale -->
             <div class="mid">
-                <i class="fa-solid fa-shuffle"></i>
-                <i class="fa-solid fa-forward-step"></i>
-                <i class="fa-regular fa-circle-play"></i>
-                <i class="fa-solid fa-backward-step"></i>
+                <div class="icons">
+                    <i class="fa-solid fa-shuffle"></i>
+                    <i class="fa-solid fa-backward-step"></i>
+                    <i class="fa-regular fa-circle-play"></i>
+                    <i class="fa-solid fa-forward-step"></i>
+                    <i class="fa-solid fa-arrow-rotate-right"></i>
+                </div>
+                <span>1:25</span>
+                <input type="range" min="0" max="100" name="player-bar" id="play-bar" class="slider">
+                <span>2:50</span>
             </div>
+            <!-- parte destra -->
             <div class="right">
-                <i class="fa-solid fa-list-ul"></i>
-                <i class="fa-solid fa-display"></i>
-                <i class="fa-solid fa-volume-high"></i>
+                <div class="icons">
+                    <i class="fa-solid fa-list-ul"></i>
+                    <i class="fa-solid fa-display"></i>
+                    <i class="fa-solid fa-volume-high"></i>
+                    <input type="range" min="0" max="100" name="player-bar" id="play-bar" class="slider">
+                </div>
+                
             </div>
         </div>
         <!-- 
