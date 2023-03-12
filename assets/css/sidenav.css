@@ -2,7 +2,9 @@
 #sidenav {
     color: rgb(128, 128, 128);
     justify-content: space-between;
-    padding: 1rem 1rem 1rem 0;
+    /* padding: 1rem 0rem 0rem 0; */
+    position: relative;
+    height: 100%;
 }
 
 #sidenav a {
@@ -10,17 +12,50 @@
     gap: 7px;
 }
 
-/* Margini e distanze tra elementi */
+/* dimensioni e posizioni asidenav */
+#logo-spotify {
+    padding-top: 1rem;
+}
+.upper-side nav,
+.upper-side #logo-spotify {
+    position: relative;
+    z-index: 9999;
+    background-color: black;
+}
+.upper-side {
+    height: calc(100%- 85px);
+}
+.bottom-side {
+    height: 85px;
+    position: absolute;
+    bottom: 0;
+    background-color: black;
+    z-index: 99;
+}
+
+
+.upper-side-mobile{
+    position: relative;
+    z-index: 99;
+    background-color: black;
+}
+.bottom-side-mobile {
+    position: absolute;
+    bottom: 0;
+    padding-bottom: 0.5rem;
+}
+
+/* Padding e distanze tra elementi */
 #logo-spotify,
 .upper-side nav a,
 .playlist-list,
 .bottom-side {
-    margin-left: 1rem
+    padding-left: 1rem
 }
 #logo-spotify,
 #sidenav nav,
 .playlist-list {
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 #sidenav nav a {
@@ -31,11 +66,12 @@
 }
 
 /* Parte superiore sidenav */
-#sidenav .upper-side {
+#sidenav .upper-side nav li,
+#sidenav .upper-side img {
     width: 90%;
 }
-#sidenav nav img {
-width: 23%;
+#sidenav .upper-side nav img {
+    width: 23%;
 }
 .fa-square-plus {
     font-size: 40px;
@@ -92,7 +128,7 @@ width: 23%;
         display: block;
     }
     #sidenav .download-icon {
-        margin:  2px 0px 2px 6px;
+        margin: auto;
     }
     #sidenav nav img {
         width: 80%;
@@ -116,15 +152,15 @@ width: 23%;
 }
 /* Track */
 #sidenav::-webkit-scrollbar-track {
-box-shadow: inset 0 0 5px grey; 
+box-shadow: inset 0 0 5px grey;
 border-radius: 10px;
 }
 /* Handle */
 #sidenav::-webkit-scrollbar-thumb {
-background: rgb(13, 143, 59); 
+background: rgb(13, 143, 59);
 border-radius: 50%;
 }
 /* Handle on hover */
 #sidenav::-webkit-scrollbar-thumb:hover {
-background: rgb(30,215,96); 
+background: rgb(30,215,96);
 }
