@@ -29,19 +29,30 @@
     margin: 0 1rem;
     cursor: pointer;
 }
-.div-bottom-link {
-    border: 1px solid transparent;
-    width: 40%;
+
+.underline-link::after {
+    content: '';
+    background-color: transparent;
+    height: 2px;
+    width: 50%;
     margin: auto;
+    display: block;
 }
 
 /* Effetto Hover: colore e underline li */
 #central nav li:hover {
     color: white;
 }
-#central nav li:hover .div-bottom-link {
-    border-color: greenyellow;
+
+#central nav li:hover .underline-link::after {
+    content: '';
+    background-color:greenyellow;
+    height: 2px;
+    width: 50%;
+    margin: auto;
+    display: block;
 }
+
 /* SECTIONS */
 section {
     padding: 1.5rem
